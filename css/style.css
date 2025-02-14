@@ -1,0 +1,175 @@
+/* first task */
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 200px;
+    background-color: palevioletred;
+    margin: 100px auto;
+}
+
+.button {
+    width: 300px;
+    height: 95px;
+    font-size: 35px;
+    padding: 5px;
+    gap: 5px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    letter-spacing: 5px;
+    background-color: fuchsia;
+    text-shadow: 3px 3px 7px black;
+    box-shadow: 5px 5px 6px 0 black, inset 3px 3px 3px 0 white;
+}
+
+.button:active {
+    box-shadow: inset 3px 3px 3px 0 black, inset -1px -1px 3px white;
+    text-shadow: 0 0 2px black;
+}
+
+/* second task */
+.card {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin: auto;
+    padding: 5px;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 0 30px #ff00f2;
+}
+
+.card:hover .card_image {
+    filter: grayscale(100%);
+    transform: scale(1.5);
+}
+
+.card_name {
+    font-size: 25px;
+    margin-left: 600px;
+}
+
+.card_about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    font-size: 25px;
+    color: #ff00f2;
+    margin-left: 600px;
+}
+
+.add {
+    width: 80px;
+    height: 35px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin-right: 600px;
+}
+
+/*3*/
+.task3 {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 100px auto;
+}
+
+.text {
+    font-size: 140px;
+    letter-spacing: 20px;
+    color: red;
+    animation: text 0.5s linear infinite;
+    /* Corrected the typo here: replaced 'o.5' with '0.5s' */
+}
+
+@keyframes text {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    75% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*.spinner{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    border: 16px solid red;
+    border-top: 16px pink;
+    border-radius: 50%;
+    animation: spin 3s linear infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg) ;color: white;
+    }
+    25%{
+        transform: perspective( 60deg);color: pink;
+    }
+    50%{
+        transform: rotate(80deg);color:blueviolet;
+    }
+    75%{
+        transform: rotate(180deg);color: darkred;
+    }
+    100%{
+        transform: rotate(360deg);color: green;
+    }
+
+    
+}*/
+/*task5*/
+.task5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width: 600px;
+
+}
+
+.task5_nav {
+    width: 300px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+li {
+    font-size: 90px;
+    transition: 1s linear;
+    margin: 0 15px; 
+}
+li:hover {
+    text-shadow: 0 0 10px #f50a9f;
+}
